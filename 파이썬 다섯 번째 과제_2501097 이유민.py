@@ -35,12 +35,12 @@ print(a)
 a = {100, 200, 300, 400, 500}
 b = {100, 200, 300, 400, 500}
 
-if a <= b:
-    print("상위")
-elif a < b:
-    print("부분")
-elif a <= b & a < b:
+if (a >= b) and (a <= b):
     print("동시")
+elif a >= b:
+    print("상위")
+elif a <= b:
+    print("부분")
 
 #37
 a = {1, 2, 3, 4, 5}
@@ -51,4 +51,5 @@ print(a)
 
 #38
 multiples = {x for x in range(1, 101)if x % 3 == 0 and x % 5 == 0}
+
 print(multiples)
